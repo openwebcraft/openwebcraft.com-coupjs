@@ -13,9 +13,7 @@
 
       "rewrites": <%= read 'rewrites.json' %>,
       
-      "_attachments": {
-        "app.js": <%= attachment 'attachments/*.js' %>
-      }
+      "_attachments": <%= attachments ["assets/humans.txt", "assets/crossdomain.xml", "assets/robots.txt", "assets/apple-touch-icon.png", "assets/favicon.ico", "assets/img/**/*.*", "assets/css/**/*.*", "assets/js/**/*.*"] %>
     },
     <%= read 'pages/about.json' %>,
     <%= read 'pages/imprint.json' %>

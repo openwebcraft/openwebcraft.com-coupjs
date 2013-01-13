@@ -1,7 +1,19 @@
 [
   {
     "from": "app.js",
-    "to": "app.js"
+    "to": "/js/app.js"
+  },
+  {
+    "from": "*.png",
+    "to": "*.png"
+  },
+  {
+    "from": "/css/*",
+    "to": "assets/css/*"
+  },
+  {
+    "from": "/js/*",
+    "to": "assets/js/*"
   },
   {
     "from": "",
