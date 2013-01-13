@@ -1,0 +1,23 @@
+{
+  "docs": [
+    {
+      "_id": "_design/pages",
+
+      "lib": <%= map 'lib' %>,
+      "models": <%= map 'models' %>,
+      "templates": <%= map 'templates' %>,
+
+      "views": <%= map 'views' %>,
+      "lists": <%= map 'lists' %>,
+      "shows": <%= map 'shows' %>,
+
+      "rewrites": <%= read 'rewrites.json' %>,
+      
+      "_attachments": {
+        "app.js": <%= attachment 'attachments/*.js' %>
+      }
+    },
+    <%= read 'pages/about.json' %>,
+    <%= read 'pages/imprint.json' %>
+  ]
+}

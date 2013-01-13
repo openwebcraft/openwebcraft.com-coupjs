@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset=utf-8>
+    <title>openwebcraft.com</title>
+    <meta name="author" content="Matthias Geisler">
+    <script src="{{{urlRoot}}}app.js"></script>
+  </head>
+  <body>
+    <h1>openwebcraft.com</h1>
+    <div id=app data-checksum="{{checksum}}">
+      {{> yield }}
+    </div>
+    <script>Coup({{{app}}})</script>
+  </body>
+</html>

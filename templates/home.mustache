@@ -1,0 +1,10 @@
+<h2>Welcome!</h2>
+
+<h3>Listing Pages</h3>
+<ol>
+  {{#rows}}
+    {{#doc}}
+      <li><a href="{{{urlRoot}}}{{_id}}">{{title}}</a></li>
+    {{/doc}}
+  {{/rows}}
+</ol>
