@@ -17,13 +17,13 @@ Yet another openwebcraft.com web site.
 
 localhost: in file `.env.local`, e.g. `COUCH_URL=http://admin:password@127.0.0.1:5984/openwebcraft_com_coupjs`
 
-Heroku: in file `.env.heroku`, e.g. `COUCH_URL=https://admin:party@openwebcraft.iriscouch.com/openwebcraft_com_coupjs`
+Iris Couch: in file `.env.iriscouch`, e.g. `COUCH_URL=https://admin:party@openwebcraft.iriscouch.com/openwebcraft_com_coupjs`
 
 ## Deployment
 
 Per target environment:
 
-    rake ENV={local|heroku} mouch
+    rake target={local|iriscouch} mouch
 
 Site start url: [http://127.0.0.1:5984/openwebcraft_com_coupjs/\_design/pages/\_rewrite](http://127.0.0.1:5984/openwebcraft_com_coupjs/_design/pages/_rewrite)
 
