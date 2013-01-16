@@ -1,11 +1,27 @@
 [
   {
-    "from": "app.js",
-    "to": "/js/app.js"
+    "from": "humans.txt",
+    "to": "assets/humans.txt"
   },
   {
-    "from": "*.png",
-    "to": "*.png"
+    "from": "robots.txt",
+    "to": "assets/robots.txt"
+  },
+  {
+    "from": "crossdomain.xml",
+    "to": "assets/crossdomain.xml"
+  },
+  {
+    "from": "apple-touch-icon.png",
+    "to": "assets/img/apple-touch-icon.png"
+  },
+  {
+    "from": "favicon.ico",
+    "to": "assets/img/favicon.ico"
+  },
+  {
+    "from": "/img/*",
+    "to": "assets/img/*"
   },
   {
     "from": "/css/*",
@@ -19,7 +35,8 @@
     "from": "",
     "to": "_list/layout/timeline",
     "query": {
-      "template": "home",
+      "layout": "layout",
+      "template": "index",
       "include_docs": "true",
       "update_seq": "true",
       "descending": "true",
@@ -27,9 +44,41 @@
     }
   },
   {
+    "from": "/blog/",
+    "to": "_list/layout/blog",
+    "query": {
+      "layout": "layout",
+      "template": "blog",
+      "include_docs": "true",
+      "update_seq": "true",
+      "descending": "true",
+      "limit": "100"
+    }
+  },
+  {
+    "from": "/feed.xml",
+    "to": "_list/rssfeed/blog",
+    "query": {
+      "layout": "rssfeed",
+      "template": "rssitems",
+      "include_docs": "true",
+      "descending": "true",
+      "limit": "100"
+     }
+  },
+  {
+    "from": "/blog/:id",
+    "to": "_show/layout/:id",
+    "query": {
+      "layout": "layout",
+      "template": "post"
+    }
+  },
+  {
     "from": ":id",
     "to": "_show/layout/:id",
     "query": {
+      "layout": "layout",
       "template": "page"
     }
   },

@@ -1,0 +1,11 @@
+{{#rows}}
+    {{#doc}}
+        <item> 
+            <title>{{title}}</title> 
+            <link>{{{urlRoot}}}blog/{{_id}}</link> 
+            <description><![CDATA[{{body}}]]></description> 
+            <pubDate>{{date}}</pubDate> 
+            <guid>{{{urlRoot}}}blog/{{_id}}</guid> 
+        </item> 
+    {{/doc}}
+{{/rows}}

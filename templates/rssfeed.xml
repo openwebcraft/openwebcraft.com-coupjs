@@ -1,0 +1,17 @@
+<rss version="2.0"> 
+    <channel> 
+        <title>[TITLE]</title> 
+        <link>[BASE_URL]</link> 
+        <description>[DESCRIPTION]</description> 
+        <language>[LOCALE]</language> 
+        <pubDate>[PUPDATE]</pubDate> 
+ 
+        <lastBuildDate>[LAST_BUILD_DATE]</lastBuildDate> 
+        <managingEditor>[AUTHOR]</managingEditor> 
+        <webMaster>[WEBMASTER]</webMaster> 
+        <generator>CouchDB</generator>
+
+        {{> yield }}
+
+    </channel>
+</rss>

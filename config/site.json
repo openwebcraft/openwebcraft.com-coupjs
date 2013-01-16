@@ -1,0 +1,16 @@
+{
+	"title": "openwebcraft.com",
+	"meta": {
+		"description": "openwebcraft web site, blog",
+		"keywords": "open source software, open web standards, JavaScript, CouchDB, HTML5, Semantic Web",
+		"generator": "CouchDB",
+		"author": {
+			"name": "Matthias Geisler",
+			"email": "matthias@openwebcraft.com"
+		},
+		"webmaster": {
+			"name": "Matthias Geisler",
+			"email": "webmaster@openwebcraft.com"
+		}
+	}
+}
