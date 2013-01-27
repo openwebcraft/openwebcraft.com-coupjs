@@ -25,7 +25,7 @@ Per target environment:
 
     rake target={local|iriscouch} mouch
 
-Site start url: [http://127.0.0.1:5984/openwebcraft_com_coupjs/\_design/pages/\_rewrite](http://127.0.0.1:5984/openwebcraft_com_coupjs/_design/pages/_rewrite)
+Site start url: [http://127.0.0.1:5984/openwebcraft_com_coupjs/_design/pages/_rewrite](http://127.0.0.1:5984/openwebcraft_com_coupjs/_design/pages/_rewrite)
 
 [couchdb]: http://couchdb.apache.org "Apache CouchDB"
 [couchapp]: http://couchapp.org/ "CouchApp"
