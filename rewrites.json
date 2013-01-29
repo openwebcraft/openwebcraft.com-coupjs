@@ -32,6 +32,10 @@
     "to": "assets/js/*"
   },
   {
+    "from": "/fonts/*",
+    "to": "assets/fonts/*"
+  },
+  {
     "from": "",
     "to": "_list/layout/timeline",
     "query": {

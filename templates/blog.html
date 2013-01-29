@@ -1,12 +1,10 @@
 <h2>Blog</h2>
 
-<p><a href="{{{urlRoot}}}">Home</a></p>
-
-<h3>Listing Posts</h3>
+<h3>Latest Posts</h3>
 <ol>
   {{#rows}}
     {{#doc}}
-      <li><a href="{{{urlRoot}}}{{_id}}">{{title}}</a></li>
+      <li><time datetime="{{date}}">{{date}}</time> <a href="{{{urlRoot}}}blog/{{_id}}">{{title}}</a></li>
     {{/doc}}
   {{/rows}}
 </ol>

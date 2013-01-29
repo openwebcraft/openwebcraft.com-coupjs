@@ -1,0 +1,8 @@
+{
+  "_id": "credits",
+  "type": "page",
+  "title": "Credits",
+  "content": "# Credits\n\n**Prime free font** - unique sans serif techy fonts by Fontfabric&trade; ([fontfabric.com](http://fontfabric.com/prime-free-font/))\n\n**HTML5 Boilerplate** - The web’s most popular front-end template ([html5boilerplate.com](http://html5boilerplate.com/))\n\n**Apache CouchDB** - a database that completely embraces the web. ([couchdb.apache.org](http://couchdb.apache.org/))\n\n**Mouch** - Couchapp Purism ([github.com/jo/mouch](http://jo.github.com/mouch/))",
+  "content_format": "markdown",
+  "date": "2013-01-29T22:55:34+01:00"
+}

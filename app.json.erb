@@ -13,12 +13,13 @@
 
       "rewrites": <%= read 'rewrites.json' %>,
       
-      "_attachments": <%= attachments ["assets/humans.txt", "assets/crossdomain.xml", "assets/robots.txt", "assets/apple-touch-icon.png", "assets/favicon.ico", "assets/img/**/*.*", "assets/css/**/*.*", "assets/js/**/*.*"] %>,
+      "_attachments": <%= attachments ["assets/humans.txt", "assets/crossdomain.xml", "assets/robots.txt", "assets/apple-touch-icon.png", "assets/favicon.ico", "assets/img/**/*.*", "assets/css/**/*.*", "assets/js/**/*.*", "assets/fonts/**/*.*"] %>,
       "config": {
         "site": <%= read 'config/site.json' %>
       }
     },
     <%= read 'pages/about.json' %>,
+    <%= read 'pages/credits.json' %>,
     <%= read 'pages/imprint.json' %>,
     <%= read 'posts/2012-11-21-IBM-Social-Business-Toolkit-Evaluation.json' %>
   ]
