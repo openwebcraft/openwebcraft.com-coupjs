@@ -2,10 +2,10 @@
     {{#doc}}
         <item> 
             <title>{{title}}</title> 
-            <link>{{{urlRoot}}}blog/{{_id}}</link> 
+            <link>{{{urlRoot}}}posts/{{_id}}</link> 
             <description><![CDATA[{{body}}]]></description> 
             <pubDate>{{date}}</pubDate> 
-            <guid>{{{urlRoot}}}blog/{{_id}}</guid> 
+            <guid>{{{urlRoot}}}posts/{{_id}}</guid> 
         </item> 
     {{/doc}}
 {{/rows}}

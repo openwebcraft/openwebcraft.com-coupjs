@@ -52,11 +52,11 @@
     }
   },
   {
-    "from": "/blog/",
-    "to": "_list/layout/blog",
+    "from": "/posts/",
+    "to": "_list/layout/posts",
     "query": {
       "layout": "layout",
-      "template": "blog",
+      "template": "posts",
       "include_docs": "true",
       "update_seq": "true",
       "descending": "true",
@@ -65,7 +65,7 @@
   },
   {
     "from": "/feed.xml",
-    "to": "_list/rssfeed/blog",
+    "to": "_list/rssfeed/posts",
     "query": {
       "layout": "rssfeed",
       "template": "rssitems",
@@ -75,7 +75,7 @@
      }
   },
   {
-    "from": "/blog/:id",
+    "from": "/posts/:id",
     "to": "_show/layout/:id",
     "query": {
       "layout": "layout",
