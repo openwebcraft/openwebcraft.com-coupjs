@@ -15,7 +15,7 @@ Yet another openwebcraft.com web site.
 
 ## Configuration
 
-localhost: in file `.env.local`, e.g. `COUCH_URL=http://admin:password@127.0.0.1:5984/openwebcraft_com_coupjs`
+localhost: in file `.env.localhost`, e.g. `COUCH_URL=http://admin:password@127.0.0.1:5984/openwebcraft_com_coupjs`
 
 Iris Couch: in file `.env.iriscouch`, e.g. `COUCH_URL=https://admin:party@openwebcraft.iriscouch.com/openwebcraft_com_coupjs`
 
@@ -23,7 +23,7 @@ Iris Couch: in file `.env.iriscouch`, e.g. `COUCH_URL=https://admin:party@openwe
 
 Per target environment:
 
-    rake target={local|iriscouch} mouch
+    rake target={localhost|iriscouch} mouch
 
 Site start url: [http://127.0.0.1:5984/openwebcraft_com_coupjs/_design/pages/_rewrite](http://127.0.0.1:5984/openwebcraft_com_coupjs/_design/pages/_rewrite)
 
