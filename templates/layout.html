@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="{{{urlRoot}}}css/vendor/foundation-3.2.5.min.css">
         <link rel="stylesheet" href="{{{urlRoot}}}css/app.css">
 
-        <link href="{{{urlRoot}}}feed.xml" rel="alternate" title="openwebcraft.com" type="application/rss+xml">
+        <link href="{{{urlRoot}}}feed.xml" rel="alternate" title="openwebcraft.com Writings" type="application/rss+xml">
 
         <script src="{{{urlRoot}}}js/vendor/coup.js"></script>
         <script src="{{{urlRoot}}}js/vendor/mustache.js"></script>
@@ -39,10 +39,8 @@
               <li><a href="{{{urlRoot}}}about/">About</a></li>
             </ul>
         
-            <ul class="right">
-              <li><a href="{{{urlRoot}}}credits/">Credits</a></li>
-              <li><a href="{{{urlRoot}}}imprint/">Imprint</a></li>
-            </ul>
+            <!--ul class="right">
+            </ul-->
           </section>
         </nav>
 
@@ -51,6 +49,20 @@
                 {{> yield }}
             </div>
           </div>
+        </div>
+
+        <div id="copyright" class="row">
+            <div class="six mobile-three columns">
+              <p>Site content &copy; 2013 openwebcraft, Matthias Geiser</p>
+            </div>
+            <div class="six mobile-three columns">
+              <ul class="inline-list right">
+                <li><a href="{{{urlRoot}}}">Home</a></li>
+                <li><a href="{{{urlRoot}}}credits/">Credits</a></li>
+                <li><a href="{{{urlRoot}}}imprint/">Imprint</a></li>
+                <li><a href="{{{urlRoot}}}feed.xml">Subscribe to Writings</a></li>
+              </ul>
+            </div>
         </div>
 	    <script>Coup({{{app}}})</script>
 
