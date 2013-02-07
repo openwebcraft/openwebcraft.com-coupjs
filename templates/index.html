@@ -1,1 +1,23 @@
 <h1>Welcome!</h1>
+
+<div class="panel callout radius">
+    <h5>Open Web craftsmanship</h5>
+    <p>is an approach to consulting and web development that emphasizes modern and open web standards-compliant skills.</p>
+</div>
+
+<h3>Recent writings</h3>
+
+<ul class="posts square">
+    {{#rows}}
+    {{#doc}}
+    <li class="post">
+        <a href="{{{urlRoot}}}posts/{{_id}}">{{title}}</a>
+        <dl class="tabs pill small">
+            {{#tags}}
+            <dd><span class="secondary label">{{.}}</span></dd>
+            {{/tags}}
+        </dl>
+    </li>
+    {{/doc}}
+    {{/rows}}
+</ul>

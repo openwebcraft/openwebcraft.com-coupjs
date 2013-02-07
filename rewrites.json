@@ -41,14 +41,14 @@
   },
   {
     "from": "",
-    "to": "_list/layout/timeline",
+    "to": "_list/layout/recent-posts",
     "query": {
       "layout": "layout",
       "template": "index",
       "include_docs": "true",
       "update_seq": "true",
       "descending": "true",
-      "limit": "100"
+      "limit": "3"
     }
   },
   {
