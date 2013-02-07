@@ -1,1 +1,8 @@
-<div class="page">{{{content_html}}}</div>
+<div class="page">
+    {{#content_html}}
+        {{{content_html}}}
+    {{/content_html}}
+    {{^content_html}}
+        {{content}}
+    {{/content_html}}
+</div>
