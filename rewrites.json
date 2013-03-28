@@ -59,9 +59,19 @@
       "template": "posts",
       "include_docs": "true",
       "update_seq": "true",
-      "descending": "true",
-      "limit": "100"
+      "descending": "true"
     }
+  },
+  {
+      "from": "/drafts/",
+      "to": "_list/layout/drafts",
+      "query": {
+          "layout": "layout",
+          "template": "drafts",
+          "include_docs": "true",
+          "update_seq": "true",
+          "descending": "true"
+      }
   },
   {
     "from": "/feed.xml",
@@ -81,6 +91,14 @@
       "layout": "layout",
       "template": "post"
     }
+  },
+  {
+      "from": "/drafts/:id",
+      "to": "_show/layout/:id",
+      "query": {
+          "layout": "layout",
+          "template": "post"
+      }
   },
   {
     "from": ":id",

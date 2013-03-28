@@ -1,6 +1,7 @@
 {
   "_id": "IBM-Social-Business-Toolkit-Evaluation",
   "type": "post",
+  "status": "published",
   "content_format": "markdown",
   "tags": [ "ibmcnx", "socbiz", "ibmconnections", "ibmsbt"],
   "title": "IBM Social Business Toolkit Evaluation",

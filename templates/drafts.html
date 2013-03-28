@@ -1,0 +1,16 @@
+<h1>Drafts</h1>
+
+<ul class="posts square">
+    {{#rows}}
+    {{#doc}}
+    <li class="post">
+        <a href="{{{urlRoot}}}drafts/{{_id}}">{{title}}</a>
+        <dl class="tabs pill small">
+            {{#tags}}
+            <dd><span class="secondary label">{{.}}</span></dd>
+            {{/tags}}
+        </dl>
+    </li>
+    {{/doc}}
+    {{/rows}}
+</ul>

@@ -22,6 +22,6 @@ function (newDoc, oldDoc, userCtx, secObj) {
     if (!v.isAuthor()) {
       v.unauthorized('Only authors or admin may create/ edit documents.');
     }
-    v.require('created_at', 'author', 'content', 'content_format', 'title');
+    v.require('created_at', 'author', 'content', 'content_format', 'title', 'type');
   }
 }
