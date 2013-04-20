@@ -1,16 +1,22 @@
-<h1>Writing</h1>
 
-<ul class="posts square">
-  {{#rows}}
-    {{#doc}}
-      <li class="post">
-      	<a href="{{{urlRoot}}}posts/{{_id}}">{{title}}</a>
-      	<dl class="tabs pill small">
-      	  {{#tags}}
-      	  <dd><span class="secondary label">{{.}}</span></dd>
-      	  {{/tags}}
-        </dl>
-      </li>
-    {{/doc}}
-  {{/rows}}
+<ul class="pagination">
+    <li class="current"><a title="Writings" href="{{{urlRoot}}}posts/">Writings</a></li>
 </ul>
+
+<ol class="articles posts">
+    {{#rows}}
+    {{#value}}
+    <li><a href="{{{urlRoot}}}posts/{{_id}}">
+        <article class="module">
+            <h1 class="h">{{title}}</h1>
+            <p class="caption">
+                <time pubdate datetime="{{created_at}}">{{created_at_from_now}}</time>&nbsp;
+                {{#tags}}
+                    <span class="secondary label">{{.}}</span>&nbsp;
+                {{/tags}}
+            </p>
+        </article>
+    </a></li>
+    {{/value}}
+    {{/rows}}
+</ol><!--/.articles-->

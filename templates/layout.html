@@ -7,12 +7,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>openwebcraft.com</title>
-        <meta name="description" content="openwebcraft.com web site">
+        <meta name="description" content="Consulting and web development on open web standards.">
         <meta name="author" content="Matthias Geisler">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="{{{urlRoot}}}css/vendor/foundation-3.2.5.min.css">
-        <link rel="stylesheet" href="{{{urlRoot}}}css/app.css">
+        <link rel="stylesheet" href="{{{urlRoot}}}css/vendor/normalize-1.1.1.css">
+        <link rel="stylesheet" href="{{{urlRoot}}}css/vendor/foundation-4.1.min.css">
+        <link rel="stylesheet" href="{{{urlRoot}}}css/vendor/barebones-styles.css">
+        <link rel="stylesheet" href="{{{urlRoot}}}css/app-1.0.css">
+
+        <script src="{{{urlRoot}}}js/vendor/custom-zepto.modernizr-2.6.2.min.js"></script>
 
         <link href="{{{urlRoot}}}feed.xml" rel="alternate" title="openwebcraft.com Writings" type="application/rss+xml">
 
@@ -25,48 +29,59 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
+        <div id="page-container">
+            <div class="row left">
+                <!-- Pitch -->
+                <div class="large-2 columns" id="pitch-container">
 
-        <nav class="top-bar">
-          <ul>
-            <li class="name"><a href="{{{urlRoot}}}">openwebcraft.com</a></li>
-            <li class="toggle-topbar"><a href="#"></a></li>
-          </ul>
-          <section>
-            <ul class="left">
-              <li><a href="{{{urlRoot}}}posts/">Writing</a></li>
-              <li><a href="{{{urlRoot}}}about/">About</a></li>
-            </ul>
-        
-            <!--ul class="right">
-            </ul-->
-          </section>
-        </nav>
+                    <aside id="pitch" class="pitch">
+                        <div class="pitch-img" style="background-image: url('{{{urlRoot}}}img/openwebcraft_cover_runde.jpg')"></div>
+                        <div class="pitch-content">
+                            <h1 class="pitch-title"><a href="{{{urlRoot}}}">openwebcraft</a></h1>
+                            <p class="pitch-slogan label">Open Web craftsmanship</p>
+                            <p class="pitch-mission-stmt">Consulting and web development on open web standards.</p>
+                            <div class="pitch-actions"><a title="About openwebcraft" class="button large expand" href="{{{urlRoot}}}about/">Learn more about openwebcraft...</a></div>
+                        </div>
+                    </aside>
 
-        <div class="row">
-            <div id="app" data-checksum="{{checksum}}" class="twelve mobile-three columns">
-                {{> yield }}
+                </div>
+
+                <!-- Main Content Section -->
+                <div class="large-8 columns" id="content-container">
+
+                    <div id="app" data-checksum="{{checksum}}" class="twelve mobile-three columns">
+                        {{> yield }}
+                    </div>
+
+                </div>
             </div>
-          </div>
+
+            <!-- Footer -->
+
+            <footer id="copyright" class="row left">
+                <div class="large-2 columns">&nbsp;</div>
+                <div class="large-8 columns">
+
+                    <hr>
+                    <ul class="inline-list">
+                        <li><p>Site content &copy; 2013 openwebcraft, Matthias Geisler</p></li>
+                        <li><a href="{{{urlRoot}}}">Home</a></li>
+                        <li><a href="{{{urlRoot}}}credits/">Credits</a></li>
+                        <li><a href="{{{urlRoot}}}imprint/">Imprint</a></li>
+                        <!--li><a href="http://feeds.feedburner.com/openwebcraft">Subscribe to Writings</a></li-->
+                    </ul>
+
+                </div>
+            </footer>
         </div>
 
-        <div id="copyright" class="row">
-            <div class="six mobile-three columns">
-              <p>Site content &copy; 2013 openwebcraft, Matthias Geisler</p>
-            </div>
-            <div class="six mobile-three columns">
-              <ul class="inline-list right">
-                <li><a href="{{{urlRoot}}}">Home</a></li>
-                <li><a href="{{{urlRoot}}}credits/">Credits</a></li>
-                <li><a href="{{{urlRoot}}}imprint/">Imprint</a></li>
-                <!--li><a href="http://feeds.feedburner.com/openwebcraft">Subscribe to Writings</a></li-->
-              </ul>
-            </div>
-        </div>
 	    <script>Coup({{{app}}})</script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="{{{urlRoot}}}js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
-        <script src="{{{urlRoot}}}js/vendor/foundation-3.2.5.min.js"></script>
-        <script src="{{{urlRoot}}}js/app.js"></script>
+        <script src="{{{urlRoot}}}js/vendor/zepto-1.0.1.min.js"></script>
+        <script src="{{{urlRoot}}}js/vendor/foundation-4.1.min.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+        <script src="{{{urlRoot}}}js/app-1.0.js"></script>
     </body>
 </html>

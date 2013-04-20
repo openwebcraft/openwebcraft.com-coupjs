@@ -1,0 +1,131 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+
+/*@font-face {
+  font-family: 'Prime-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Prime-Light'), url('../fonts/prime/Prime-Light.ttf') format('truetype');
+}
+body {
+  font-family: 'Prime-Light';
+}*/
+
+@font-face {
+  font-family: 'Prime-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Prime-Regular'), url('../fonts/prime/Prime-Regular.ttf') format('truetype');
+}
+body, h1, h2, h3, h4 {
+  font-family: 'Prime-Regular';
+}
+
+/* -----------------------------------------
+   #*-container
+----------------------------------------- */
+
+#page-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#pitch-container {
+    padding: 0 0 15px 0;
+}
+
+#content-container {
+    padding: 15px 0 0 0;
+}
+
+/* -----------------------------------------
+   #pitch
+----------------------------------------- */
+
+#pitch {
+    height: 100%;
+    width: 30%;
+    left: 0;
+    top: 0;
+    max-width: 320px;
+    position: fixed;
+    z-index: 100;
+
+    /*    height: 576px;
+        width: 100%;
+        max-width: none;
+        position: relative;*/
+}
+
+.pitch-img {
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.pitch-content {
+    width: 100%;
+    color: #fff;
+    bottom: 0;
+    padding: 50px 10% 10%;
+    position: absolute;
+}
+
+h1.pitch-title {
+    font-size: 2.0em;
+    margin-bottom: 0;
+}
+
+.pitch-title a {
+    color: #fff;
+}
+
+.pitch-slogan {
+
+}
+
+.pitch-mission-stmt {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.pitch-actions {
+    font-weight: bold;
+}
+
+/* -----------------------------------------
+   .articles
+----------------------------------------- */
+
+.articles a:hover {
+    background-color: #fff;
+}
+.articles a:active {
+    background-color: #fff;
+}
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+

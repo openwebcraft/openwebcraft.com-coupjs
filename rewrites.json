@@ -24,7 +24,7 @@
     "to": "assets/img/*"
   },
   {
-    "from": "/images/*", // Foundation 3 (foundation.zurb.com) img assets
+    "from": "/images/*",
     "to": "assets/img/*"
   },
   {

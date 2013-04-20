@@ -1,4 +1,9 @@
-<div class="post">
+<ul class="pagination">
+    <li class="current"><a title="{{title}}" href="{{{urlRoot}}}posts/{{_id}}">{{title}}</a></li>
+    <li><a title="All writings" href="{{{urlRoot}}}posts/">Writings</a></li>
+</ul>
+
+<div class="module post">
     {{#content_html}}
         {{{content_html}}}
     {{/content_html}}
@@ -6,8 +11,9 @@
         {{content}}
     {{/content_html}}
 </div>
-<dl class="tabs pill small">
-  {{#tags}}
-  <dd><span class="secondary label">{{.}}</span></dd>
-  {{/tags}}
-</dl>
+
+<ul class="inline-list">
+    {{#tags}}
+    <li><span class="secondary label">{{.}}</span></li>
+    {{/tags}}
+</ul>
