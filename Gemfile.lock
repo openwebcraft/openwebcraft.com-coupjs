@@ -3,9 +3,11 @@ GEM
   specs:
     dotenv (0.4.0)
     json (1.7.6)
+    json (1.7.6-java)
     rake (10.0.3)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES

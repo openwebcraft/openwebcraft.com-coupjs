@@ -98,15 +98,6 @@ h1.pitch-title {
 
 }
 
-.pitch-mission-stmt {
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.pitch-mission-stmt .em {
-    text-decoration: underline;
-}
-
 .pitch-actions {
     font-weight: bold;
 }
