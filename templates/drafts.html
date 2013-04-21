@@ -1,16 +1,21 @@
-<h1>Drafts</h1>
-
-<ul class="posts square">
-    {{#rows}}
-    {{#doc}}
-    <li class="post">
-        <a href="{{{urlRoot}}}drafts/{{_id}}">{{title}}</a>
-        <dl class="tabs pill small">
-            {{#tags}}
-            <dd><span class="secondary label">{{.}}</span></dd>
-            {{/tags}}
-        </dl>
-    </li>
-    {{/doc}}
-    {{/rows}}
+<ul class="pagination">
+    <li class="current"><a title="Drafts" href="{{{urlRoot}}}drafts/">Drafts</a></li>
 </ul>
+
+<ol class="posts">
+    {{#rows}}
+    {{#value}}
+    <li>
+        <article>
+            <a href="{{{urlRoot}}}drafts/{{_id}}"><h3 class="h">{{title}}</h3></a>
+            <ul class="inline-list">
+                <li><time pubdate datetime="{{created_at}}" class="pubdate">{{created_at_from_now}}</time></li>
+                {{#tags}}
+                <li><span class="secondary label">{{.}}</span></li>
+                {{/tags}}
+            </ul>
+        </article>
+    </li>
+    {{/value}}
+    {{/rows}}
+</ol><!--/.posts-->
