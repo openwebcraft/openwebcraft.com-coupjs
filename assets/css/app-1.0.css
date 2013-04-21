@@ -103,6 +103,10 @@ h1.pitch-title {
     font-weight: bold;
 }
 
+.pitch-mission-stmt .em {
+    text-decoration: underline;
+}
+
 .pitch-actions {
     font-weight: bold;
 }
