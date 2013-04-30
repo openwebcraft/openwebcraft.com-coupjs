@@ -11,6 +11,9 @@
         <article>
             <a href="{{{urlRoot}}}posts/{{_id}}"><h3 class="h">{{title}}</h3></a>
             <ul class="inline-list">
+                {{#attachments}}
+                <li><a href="{{{urlRoot}}}api/{{_id}}/{{filename}}" title="{{filename}}"><i class="foundicon-paper-clip"></i></a></li>
+                {{/attachments}}
                 <li><time pubdate datetime="{{created_at}}" class="pubdate">{{created_at_from_now}}</time></li>
                 {{#tags}}
                 <li><span class="secondary label">{{.}}</span></li>
